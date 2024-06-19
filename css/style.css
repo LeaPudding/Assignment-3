@@ -1,0 +1,207 @@
+
+@font-face {
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 200 300 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/prata/v20/6xKhdSpbNNCT-sWCCm7JLQ.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+    
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200 300 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiGyp8kv8JHgFVrLPTufntAKPY.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/images/NightSky.jpeg");
+    background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+}
+header {
+    width: 100vw;
+    height: 90px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+}
+header > div {
+    display: flex;
+    margin-left: 50px;
+}
+#tagline {
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+#tagline > h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+}
+#tagline > p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #ffffff;
+}
+#logo {
+    width: 85px;
+    height: 85px;
+    background-image: url("/assets/images/HV.png");
+    background-size: cover;
+}
+nav {
+    width: 50%;
+    height: 100%;
+}
+nav > ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+#burger {
+    width: 90px;
+    height: 90px;
+    background-color: #EF3D3A;
+    background-image: url("/assets/images/Burger.png");
+    background-size: cover;
+}
+main {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    position: absolute;
+    bottom: 0;
+}
+#intro #offers {
+    width: 100vw;
+}
+#intro {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2%;
+}
+#offers {
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#intro > h1 {
+    font-family: 'Prata';
+    line-height: 75px;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+#intro > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: extralight 200;
+    line-height: 35px;
+    color: white;
+    text-align: center;
+}
+button {
+    height: 80px;
+    font-size: 18px;
+    padding: 0 60px;
+    /* TODO: set a top and bottom padding of 0 and left and right padding of 60px (1 property) */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    border: none;
+    background-color: #EF3D3A;
+    color: white;
+    margin-top:25px;
+}
+#offers > article {
+    width: 25%;
+    height: 65%;
+    background-color: #201D2FB5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* set a background color of #201D2F with an alpha channel of B5 (1 property) */
+    /* TODO: set a 10px rounded corner to the article containers (1 property) */
+    /* TODO: set the size of the box to be the border-box (1 property) */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* TODO: set the display to flex with the column direction and contents are justified with the equal space between them (3 properties) */    
+    align-items: flex-start;
+}
+#offers article div {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* TODO: set the display to flex with contents justified with the equal space between them and vertivally align the items to the center (3 properties) */
+}
+/* TODO: with the css selector target the figure elements in the element with the id "offers" (1 selector) */
+#offers figure {
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #ffffff;
+}
+#offers p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 25px;
+    color: white;
+}
+#offers a {
+    text-decoration: none;
+    border-bottom: 2px solid #EF3D3A;
+    /* TODO: make sure the anchor elements doesn't have decorations (1 property) */
+    /* TODO: give them a border of 2px solid #EF3D3A to the bottom of the anchor element (1 property) */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+#audio {
+    /* TODO: set the Headset.png as background */
+    background-image: url("/assets/images/Headset.png");
+}
+#program {
+    /* TODO: set the Direction.png as background */
+    background-image: url("/assets/images/Direction.png");
+}
+#hotel {
+    /* TODO: set the Hotel.png as background */
+    background-image: url("/assets/images/Hotel.png");
+}
